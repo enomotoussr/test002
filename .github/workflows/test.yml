@@ -18,3 +18,14 @@ jobs:
             - name: sample
               run: |
                 echo "${{ matrix.aaa }}"  
+
+    sample-job-test:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                aaa: [hoge, fuga]
+        
+        steps:
+            - name: sample
+              run: |
+                echo "${{ matrix.aaa }}"  
