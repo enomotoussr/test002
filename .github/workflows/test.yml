@@ -21,6 +21,7 @@ jobs:
 
     sample-job-test:
         runs-on: ubuntu-latest
+        needs: sample-job
         strategy:
             matrix:
                 aaa: [hoge, fuga]
